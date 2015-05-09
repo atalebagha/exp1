@@ -2,7 +2,7 @@ extends layout
 
 block content
   .container
-    .form(method='post', action='contact/send')
+    form(method='post', action='contact/send')
       h1 Contact us
       .form-group
         label Name
@@ -12,5 +12,5 @@ block content
         input.form-control(type='email',name='email',placeholder='Enter Email')
       .form-group
         label Messages
-        textarea.form-control(type='message', placeholder='Enter Message...')
-      button.btn.btn-default(type='submit') submit
+        textarea.form-control(name='message', placeholder='Enter Message...')
+      button.btn.btn-default(type='submit') Submit
